@@ -3055,14 +3055,16 @@ body {
 }
 
 #header {
-    background: #1c1c1c;
-    color: #d5d5d5;
+    background: #ffffff;
+
+    background-repeat: no-repeat;
+    color: #a53704;
     cursor: default;
     height: 5em;
     left: 0;
     line-height: 5em;
     position: fixed;
-    text-align: right;
+    text-align: relative;
     top: 0;
     width: 100%;
     z-index: 10001;
@@ -3083,20 +3085,20 @@ body {
 }
 
 #header .logo {
-    font-family: 'Pacifico', cursive;
+    font-family: Tahoma, sans-serif;
     display: inline-block;
     height: inherit;
-    left: 0;
     line-height: inherit;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: relative;
     top: 0;
     color: #a53704;
     font-size: 1.75em;
     text-transform: none;
     font-weight: normal;
     padding: 0;
+
 }
 
 #header .logo:hover {
@@ -3110,7 +3112,7 @@ body {
     transition: color 0.2s ease-in-out;
     display: inline-block;
     padding: 0 2em;
-    color: #ffffff;
+    color: #a53704;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -3118,7 +3120,7 @@ body {
 }
 
 #header a:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(7, 0, 0, 0.75);
 }
 
 #header a:last-child {
@@ -3168,7 +3170,8 @@ body {
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
-    color: #fff;
+    color:#a53704;
+    ;
     display: block;
     font-size: 16px;
     height: 2.25em;
@@ -3193,7 +3196,7 @@ body {
 }
 
 .navPanelToggle *:before {
-    color: #fff;
+color: #a53704;
     display: block;
     font-size: 16px;
     height: 2.25em;
@@ -3220,8 +3223,8 @@ body {
     position: fixed;
     right: 0;
     top: 0;
-    background: #1c1c1c;
-    color: #fff;
+    background: #ffffff;
+    color: #a53704;
     height: 100%;
     max-width: 80%;
     width: 20em;
@@ -3242,7 +3245,7 @@ body {
 
 #navPanel a:not(.close) {
     border-top: solid 1px rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: #a53704;
     font-weight: 700;
     display: block;
     padding: 0.75em 0;
@@ -3311,7 +3314,7 @@ body {
     font-weight: bold;
     padding: 13em 0 11em 0;
     background-color: #0c0c0c;
-    background-image: url("../../images/RobotHands3.jpg");
+    background-image: url("../../images/2018-Rockwell.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 15% left;
@@ -3512,7 +3515,35 @@ body.is-loading #banner:after {
     }
 }
 
-
+/* Video Ref */
+#video-ref {
+    background-color: #a53704;
+    color: #ffa175;
+    font-weight: bold;
+    background-color: #0c0c0c;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 /* Main */
 
 #main {
