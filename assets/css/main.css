@@ -2490,14 +2490,16 @@ header p {
     margin: 0 0 1.5em 0;
 }
 
-header h2+p {
-    font-size: 1.25em;
+header h2 {
+    font-size: 0.6em;
     margin-top: -1em;
+    align-content: flex-end;
 }
 
-header h3+p {
-    font-size: 1.1em;
+header h3 {
+    font-size: 0.6em;
     margin-top: -0.8em;
+    align-content: flex-end;
 }
 
 header h4+p,
@@ -3099,6 +3101,7 @@ body {
     font-weight: normal;
     padding: 0;
 
+
 }
 
 #header .logo:hover {
@@ -3144,7 +3147,10 @@ body {
 
 #nav {
     display: inline-block;
+    float: right;
 }
+
+
 
 @media screen and (max-width: 980px) {
     #nav {
@@ -3310,17 +3316,21 @@ color: #a53704;
 
 #banner {
     background-color: #a53704;
-    color: #ffa175;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    color: #ffffff;
     font-weight: bold;
-    padding: 13em 0 11em 0;
+    padding: 13em 0 0em 0;
     background-color: #0c0c0c;
     background-image: url("../../images/2018-Rockwell.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 15% left;
     text-align: left;
+
     position: relative;
     z-index: 9999;
+
 }
 
 #banner input,
@@ -3429,28 +3439,16 @@ color: #a53704;
 }
 
 #banner:after {
-    -moz-transition: opacity 4s ease;
-    -webkit-transition: opacity 4s ease;
-    -ms-transition: opacity 4s ease;
-    transition: opacity 4s ease;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    top: 0;
-    left: 0;
-    background-color: #0c0c0c;
-    opacity: 0.25;
+
 }
 
 #banner .inner {
     max-width: 65em;
     width: calc(100% - 6em);
     margin: 0 auto;
-    position: relative;
     z-index: 10000;
     line-height: 1.5;
+    padding: 16em 0 0em 0;
 }
 
 @media screen and (max-width: 480px) {
