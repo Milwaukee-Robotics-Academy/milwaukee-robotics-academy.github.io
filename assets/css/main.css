@@ -3062,9 +3062,7 @@ body {
     background-repeat: no-repeat;
     color: #a53704;
     cursor: default;
-    height: 5em;
     left: 0;
-    line-height: 5em;
     position: fixed;
     text-align: relative;
     top: 0;
@@ -3128,6 +3126,14 @@ body {
 
 #header a:last-child {
     padding-right: 0em;
+}
+
+#header h2 {
+    margin: 0;
+}
+
+#header h3 {
+    margin: 0;
 }
 
 @media screen and (max-width: 736px) {
