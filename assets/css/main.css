@@ -3091,7 +3091,7 @@ body {
 #header .logo {
     font-family: Tahoma, sans-serif;
     display: inline-block;
-    height: inherit;
+    height: 1 em;
     line-height: inherit;
     margin: 0;
     padding: 0;
