@@ -3616,12 +3616,8 @@ body.is-loading #banner:after {
 
 #future {
     padding: 6em 0 4em 0;
-    background: #f3f3f3;
-    background: -moz-linear-gradient(left, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-    background: -webkit-linear-gradient(left, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-    background: linear-gradient(to right, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f7f7f7', GradientType=1);
 }
+
 
 #future .inner {
     display: -ms-flexbox;
@@ -3650,10 +3646,6 @@ body.is-loading #banner:after {
 @media screen and (max-width: 980px) {
     #future {
         padding: 4em 0 2em 0;
-        background: -moz-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-        background: -webkit-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-        background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f7f7f7', GradientType=0);
     }
     #future .inner {
         -moz-flex-direction: column;
@@ -3662,15 +3654,24 @@ body.is-loading #banner:after {
         flex-direction: column;
     }
     #future .inner article {
-        width: 50%;
+        width: 100%;
+        margin: 0 auto;
     }
     #future .inner article:first-child {
-        padding-right: 0;
-        padding-bottom: 2em;
+        padding-right: 0em;
     }
+    
     #future .inner article:last-child {
-        padding-left: 0;
-        padding-top: 2em;
+        padding-left: 0em;
+    }
+    #future .inner article:last-child h2 {
+    background-color: #a53704;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
     }
 }
 
