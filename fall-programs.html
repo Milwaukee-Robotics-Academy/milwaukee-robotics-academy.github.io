@@ -78,11 +78,62 @@
         <div class="inner">
             <article>
                 <div class="content">
-                    <h2>2021-2022 FRC Teams</h2>
-                    <div class="image fit">
+                    <h2>2021-2022 Robotics Teams</h2>
+                   <!-- <div class="image fit">
                         <img src="images/summerworkshop2.jpg" alt="Working on Wiring The robots" />
-                    </div>
-                    <h4>Come Join our 2021-2022 Teams</h4>
+                    </div> -->
+                    
+                    
+                    <section id="video-ref">
+                        <div id="player"></div>
+
+                        <script>
+                          // 2. This code loads the IFrame Player API code asynchronously.
+                          var tag = document.createElement('script');
+                    
+                          tag.src = "https://www.youtube.com/iframe_api";
+                          var firstScriptTag = document.getElementsByTagName('script')[0];
+                          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    
+                          // 3. This function creates an <iframe> (and YouTube player)
+                          //    after the API code downloads.
+                          var player;
+                          function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('player', {
+                              videoId: 'AP0oGW4aCGI',
+                              playerVars: {
+                                'playsinline': 1,
+                                'mute': 1,
+                                'loop': 1,
+                                'controls': 0
+                              },
+                              events: {
+                                'onReady': onPlayerReady,
+                                'onStateChange': onPlayerStateChange
+                              }
+                            });
+                          }
+                    
+                          // 4. The API will call this function when the video player is ready.
+                          function onPlayerReady(event) {
+                            event.target.playVideo();
+                          }
+                    
+                          // 5. The API calls this function when the player's state changes.
+                          //    The function indicates that when playing a video (state=1),
+                          //    the player should play for six seconds and then stop.
+                          var done = false;
+                          function onPlayerStateChange(event) {
+                            if (event.data == YT.PlayerState.PLAYING && !done) {
+                              setTimeout(stopVideo, 6000);
+                              done = true;
+                            }
+                          }
+                          function stopVideo() {
+                            player.stopVideo();
+                          }
+                        </script>
+                    </section>                   
                     <p>Our Academy Robotics Teams offer an inclusive community, where high schoolers learn high tech skills while building robots for competition.
                          <ul class="actions">
                             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfna9-tbm6Mj3yxrEb6XvVhb6Kq6BkX0fYUW3pyKVfuNRNxWA/viewform?usp=pp_url&entry.429166855=Add+me+you+your+mailing+list"
@@ -114,8 +165,8 @@
                     <h3>Robot Design</h3>
                     <ul>
                         <li>Prototyping</li>
-                        <li>Computer Aided Design (CAD) with Onshape</li>
-                        <li>3D printing</li>
+                        <li>Use Onshape (CAD) to create components for robot gaming</li>
+                        <li>October 7-28th Thursdays 4:30-5:30pm</li>
                     </ul>
                 </div>
             </article>
@@ -124,11 +175,11 @@
                     <div class="image fit">
                         <img src="images/build.jpg" />
                     </div>
-                    <h3>Robot Build</h3>
+                    <h3>Java Programming</h3>
                     <ul>
-                        <li>Prototype an FRC Mechanism</li>
-                        <li>Create with a CNC Router</li>
-                        <li>Build a ball shooter for the robot</li>
+                        <li>Learn to code by tasks through gaming.</li>
+                        <li>Vision Tracking</li>
+                        <li>Autonomous Driving</li>
                     </ul>
                 </div>
             </article>
