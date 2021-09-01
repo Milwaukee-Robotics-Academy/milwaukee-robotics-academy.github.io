@@ -1635,7 +1635,9 @@ h4 {
 }
 
 h5 {
-    font-size: 0.9em;
+    font-size: 1.1em;
+    color: #111111;
+    font-weight: 700;
 }
 
 h6 {
@@ -1737,7 +1739,6 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
     color: #a53704;
 }
@@ -3631,10 +3632,14 @@ body.is-loading #banner:after {
     flex-direction: row;
 }
 
+
 #future .inner article {
     width: 50%;
 }
-
+#future .inner .article h5 {
+    color: #111111;
+    font-weight: 700;
+}
 #future .inner article:first-child {
     padding-right: 6em;
 }
